@@ -47,4 +47,24 @@ body {
 /* SAIT MAIN CSS START  */
 .site-main {
     flex-grow: 1;
+    font-family: monospace ;
+}
+
+h1{
+    color: wheat;
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* Button css start  */
+#result {
+    width: 100px;
+    height: 50px;
+    background-color:aqua;
+    color: blue;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 15px;
+    margin-left: 500px;
+    margin-top: 100px;
 }
