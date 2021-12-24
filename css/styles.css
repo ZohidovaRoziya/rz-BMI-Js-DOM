@@ -29,13 +29,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
   background-color: #fff;
   padding: 0;
   margin: 0;
   font-family: "Macondo Swash Caps", display;
   font-size: 16px;
   line-height: 1.5;
+  min-height: 100vh;
+  background: url('https://source.unsplash.com/1980x900/?cloud');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* CONTAINER CSS START  */
@@ -68,7 +71,7 @@ body {
   width: 100px;
   height: 50px;
   background-color: aqua;
-  color: blue;
+  color: #fff;
   font-size: 25px;
   text-align: center;
   border-radius: 15px;
@@ -102,7 +105,9 @@ body {
 /* BMI CALCULATOR CSS START  */
 .card {
   text-align: center;
-  color: blue;
+  color: #fff;
+  background-color: rgba(4, 4, 165, 0.356);
+  box-shadow: 0 0 20px #eee;
   letter-spacing: 2px;
   font-weight: bold;
   padding-left: 40px;
@@ -111,8 +116,6 @@ body {
 }
 
 .card-header {
-  background-color: #85fcff;
-  background-image: linear-gradient(130deg, #85fcff 43%, #7dc5ff 68%);
   border-bottom: 0px;
   border-radius: 10px 10px 0 0;
 }
@@ -126,8 +129,6 @@ body {
 
 .card-body {
     padding: 20px;
-  background-color: #85d1ff;
-  background-image: linear-gradient(130deg, #85d1ff 43%, #7dfffd 68%);
   border-radius: 0 0 10px 10px;
   padding-left: 50px;
   padding-right: 40px;
@@ -148,14 +149,6 @@ input {
     padding-left: 10px;
     border-radius: 5px;
     color: blue;
-}
-
-.name-bmi {
-
-}
-.height-bmi {
-}
-.weight-bmi {
 }
 
 
