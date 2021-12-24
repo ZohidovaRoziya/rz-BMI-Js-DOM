@@ -22,26 +22,7 @@ bmi_form.addEventListener( "submit", (e)=> {
     } else {
         card_heading_El.textContent = `${bmiName} siz o'ta semisz!`
     }
+    name_bmi_El.value = ''
+    weight_bmi_El.value = ''
+    height_bmi_El.value = ''
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
