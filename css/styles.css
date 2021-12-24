@@ -1,70 +1,182 @@
+/* IMPORT FONT FAMILY LINK  */
+@import url(https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&display=swap);
+
 /* GLOBAL CSS START  */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 *,
 *::after,
 *::before {
-    box-sizing:inherit;
+  box-sizing: inherit;
 }
 
 *:focus {
-    outline: 2px dotted orange;
-    outline-offset: 3px;
+  outline: 2px dotted blue;
+  outline-offset: 3px;
 }
 
 html {
-    height: 100%;
-    box-sizing:border-box;
-    scroll-behavior: smooth;
+  height: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    background-color: #fff;
-    padding: 0;
-    margin: 0;
-    font-family: "Arial", sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  font-family: "Macondo Swash Caps", display;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 /* CONTAINER CSS START  */
 .container {
-     width: 100%;
-     max-width: 1200px;
-     margin-left: auto;
-     margin-right: auto;
-     padding-left: 50px;
-     padding-right: 50px;
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* SAIT MAIN CSS START  */
 .site-main {
-    flex-grow: 1;
-    font-family: monospace ;
+  flex-grow: 1;
+  font-family: monospace;
 }
 
-h1{
+/* h1 {
     color: wheat;
     text-align: center;
     margin-top: 100px;
-}
+} */
 
 /* Button css start  */
 #result {
-    width: 100px;
-    height: 50px;
-    background-color:aqua;
-    color: blue;
-    font-size: 25px;
-    text-align: center;
-    border-radius: 15px;
-    margin-left: 500px;
-    margin-top: 100px;
+  width: 100px;
+  height: 50px;
+  background-color: aqua;
+  color: blue;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 15px;
+  margin-left: 500px;
+  margin-top: 100px;
 }
+
+.photo {
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
+  margin-left: 400px;
+  border-radius: 50%;
+}
+
+.smaile_photo1 {
+  display: none;
+}
+
+.smaile_photo2 {
+  display: none;
+}
+.smaile_photo3 {
+  display: none;
+}
+
+.smaile_photo4 {
+  display: none;
+}
+
+/* BMI CALCULATOR CSS START  */
+.card {
+  text-align: center;
+  color: blue;
+  letter-spacing: 2px;
+  font-weight: bold;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 10px;
+}
+
+.card-header {
+  background-color: #85fcff;
+  background-image: linear-gradient(130deg, #85fcff 43%, #7dc5ff 68%);
+  border-bottom: 0px;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-heading {
+  margin: 0;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.card-body {
+    padding: 20px;
+  background-color: #85d1ff;
+  background-image: linear-gradient(130deg, #85d1ff 43%, #7dfffd 68%);
+  border-radius: 0 0 10px 10px;
+  padding-left: 50px;
+  padding-right: 40px;
+}
+
+.input-label {
+  font-size: 20px;
+margin-bottom: 20px;
+}
+
+input {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+    height: 30px;
+    border:none;
+    padding-left: 10px;
+    border-radius: 5px;
+    color: blue;
+}
+
+.name-bmi {
+
+}
+.height-bmi {
+}
+.weight-bmi {
+}
+
+
+.btn-grad {background-image: linear-gradient(to right, #00c6ff 0%, #0072ff  51%, #00c6ff  100%)}
+.btn-grad {
+   margin: 10px;
+   padding: 15px 45px;
+   border: none;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: inline-block;
+   font-size: 25px;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
